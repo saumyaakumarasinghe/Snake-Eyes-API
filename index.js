@@ -17,6 +17,8 @@ app.use(cors());                            //allow middleware to express app
 app.use(express.json());                    //allow express app to view the request body 
 app.use("/api", router);                    //setup routing path
 
+app.listen(PORT);
+
 //connect to the db
 mongoose.connect(URI, {
     useNewUrlParser: true,
